@@ -1,1 +1,2 @@
-// Public package entry point. Components will be exported from here as they are added.
+export { Button } from './components/Button';
+export type { ButtonProps } from './components/Button';
