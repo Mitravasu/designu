@@ -1,6 +1,6 @@
 :root {
   /* Typography */
-  --font-family-sans: "Zen Kaku Gothic New", sans-serif;
+  --font-family-sans: 'Zen Kaku Gothic New', sans-serif;
   font-family: var(--font-family-sans);
 
   --heading-xl: clamp(28px, 3vw, 32px);
@@ -49,6 +49,16 @@
   --layout-section-gap-md: var(--space-8);
   --layout-section-gap-lg: var(--space-12);
 
+  /* Motion duration */
+  --motion-fast: 100ms;
+  --motion-default: 200ms;
+  --motion-slow: 300ms;
+
+  /* Motion easing */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+
   /* Radius */
   --radius-none: 0;
   --radius-sm: 2px;
@@ -61,81 +71,81 @@
   --border-style-default: solid;
 
   /* Colors */
-  --primary-0: #FFFDFD;
-  --primary-100: #FFD9D8;
-  --primary-200: #FFB8B7;
-  --primary-300: #FF9C9A;
-  --primary-400: #FF8481;
-  --primary-500: #FF6F6D;
+  --primary-0: #fffdfd;
+  --primary-100: #ffd9d8;
+  --primary-200: #ffb8b7;
+  --primary-300: #ff9c9a;
+  --primary-400: #ff8481;
+  --primary-500: #ff6f6d;
   --primary-600: #f25f5c;
-  --primary-700: #D45351;
-  --primary-800: #B64745;
-  --primary-900: #973B3A;
-  --primary-950: #79302E;
+  --primary-700: #d45351;
+  --primary-800: #b64745;
+  --primary-900: #973b3a;
+  --primary-950: #79302e;
   --primary: var(--primary-600);
 
-  --neutral-0: #FCFDFD;
-  --neutral-100: #D2D5D8;
-  --neutral-200: #A8ADB2;
-  --neutral-300: #7E858B;
-  --neutral-400: #545C65;
-  --neutral-500: #2A343D;
-  --neutral-600: #010C15;
-  --neutral-700: #010B12;
+  --neutral-0: #fcfdfd;
+  --neutral-100: #d2d5d8;
+  --neutral-200: #a8adb2;
+  --neutral-300: #7e858b;
+  --neutral-400: #545c65;
+  --neutral-500: #2a343d;
+  --neutral-600: #010c15;
+  --neutral-700: #010b12;
   --neutral-800: #010910;
-  --neutral-900: #01080D;
-  --neutral-950: #01060B;
+  --neutral-900: #01080d;
+  --neutral-950: #01060b;
 
-  --success-0: #FCFFFD;
-  --success-100: #D2FFD7;
-  --success-200: #A8FDB4;
-  --success-300: #7EF593;
-  --success-400: #54E875;
-  --success-500: #2AD658;
-  --success-600: #0FBF3E;
-  --success-700: #0DA736;
-  --success-800: #0B8F2F;
+  --success-0: #fcfffd;
+  --success-100: #d2ffd7;
+  --success-200: #a8fdb4;
+  --success-300: #7ef593;
+  --success-400: #54e875;
+  --success-500: #2ad658;
+  --success-600: #0fbf3e;
+  --success-700: #0da736;
+  --success-800: #0b8f2f;
   --success-900: #097727;
-  --success-950: #08601F;
+  --success-950: #08601f;
   --success: var(--success-600);
 
-  --error-0: #FFFCFC;
-  --error-100: #FFD2D2;
-  --error-200: #FFA8A8;
-  --error-300: #FF7E7E;
-  --error-400: #FF5454;
-  --error-500: #FF2A2A;
-  --error-600: #FF0000;
-  --error-700: #DF0000;
-  --error-800: #BF0000;
-  --error-900: #9F0000;
+  --error-0: #fffcfc;
+  --error-100: #ffd2d2;
+  --error-200: #ffa8a8;
+  --error-300: #ff7e7e;
+  --error-400: #ff5454;
+  --error-500: #ff2a2a;
+  --error-600: #ff0000;
+  --error-700: #df0000;
+  --error-800: #bf0000;
+  --error-900: #9f0000;
   --error-950: #800000;
   --error: var(--error-600);
 
-  --info-0: #FCFEFF;
-  --info-100: #D2E4FF;
-  --info-200: #A8CBFF;
-  --info-300: #7EB2F7;
-  --info-400: #5499EB;
-  --info-500: #2A7FD9;
-  --info-600: #0A66C2;
-  --info-700: #0959AA;
-  --info-800: #084D92;
+  --info-0: #fcfeff;
+  --info-100: #d2e4ff;
+  --info-200: #a8cbff;
+  --info-300: #7eb2f7;
+  --info-400: #5499eb;
+  --info-500: #2a7fd9;
+  --info-600: #0a66c2;
+  --info-700: #0959aa;
+  --info-800: #084d92;
   --info-900: #064079;
   --info-950: #053361;
   --info: var(--info-600);
 
-  --warning-0: #FFFFFC;
-  --warning-100: #FFFBD2;
-  --warning-200: #FFF3A8;
-  --warning-300: #FFE97E;
-  --warning-400: #FFDC54;
-  --warning-500: #FFCB2A;
+  --warning-0: #fffffc;
+  --warning-100: #fffbd2;
+  --warning-200: #fff3a8;
+  --warning-300: #ffe97e;
+  --warning-400: #ffdc54;
+  --warning-500: #ffcb2a;
   --warning-600: #fab80a;
-  --warning-700: #DBA109;
-  --warning-800: #BC8A08;
-  --warning-900: #9C7306;
-  --warning-950: #7D5C05;
+  --warning-700: #dba109;
+  --warning-800: #bc8a08;
+  --warning-900: #9c7306;
+  --warning-950: #7d5c05;
   --warning: var(--warning-600);
 
   /* Alpha primitives */
@@ -183,4 +193,13 @@
   --shadow-sm: 0 1px 3px var(--color-shadow-subtle);
   --shadow-md: 0 4px 12px var(--color-shadow-default);
   --shadow-lg: 0 12px 32px var(--color-shadow-strong);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
