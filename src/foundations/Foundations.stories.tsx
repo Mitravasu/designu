@@ -77,8 +77,8 @@ const overlayColors: ColorToken[] = alphaSteps.map((step) => ({
 }));
 
 const meta = {
-  title: 'Foundations/Color primitives',
-  tags: ['autodocs'],
+  title: 'Foundations',
+  tags: [],
   parameters: {
     layout: 'fullscreen',
     docs: {
@@ -137,7 +137,7 @@ function ColorSection({
   );
 }
 
-export const Overview: Story = {
+export const ColorPrimitives: Story = {
   render: () => (
     <main style={styles.page}>
       <div style={styles.header}>

@@ -40,8 +40,8 @@ const typeGroups: { title: string; tokens: TypeToken[] }[] = [
 ];
 
 const meta = {
-  title: 'Foundations/Typography',
-  tags: ['autodocs'],
+  title: 'Foundations',
+  tags: [],
   parameters: {
     layout: 'fullscreen',
     docs: {
@@ -77,7 +77,7 @@ function TypeTokenRow({ token }: { token: TypeToken }) {
   );
 }
 
-export const Overview: Story = {
+export const Typography: Story = {
   render: () => (
     <main style={styles.page}>
       <div style={styles.header}>
