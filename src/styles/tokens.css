@@ -1,5 +1,19 @@
 :root {
-  /* Primary */
+  /* Typography */
+  --font-family-sans: "Zen Kaku Gothic New", sans-serif;
+  font-family: var(--font-family-sans);
+
+  --heading-xl: clamp(28px, 3vw, 32px);
+  --heading-l: 24px;
+  --heading-m: 20px;
+  --heading-s: 16px;
+  --body-l: 16px;
+  --body-m: 14px;
+  --body-s: 12px;
+  --label-m: 14px;
+  --label-s: 12px;
+
+  /* Colors */
   --primary-0: #FFFDFD;
   --primary-100: #FFD9D8;
   --primary-200: #FFB8B7;
@@ -13,7 +27,6 @@
   --primary-950: #79302E;
   --primary: var(--primary-600);
 
-  /* Neutrals */
   --neutral-0: #FCFDFD;
   --neutral-100: #D2D5D8;
   --neutral-200: #A8ADB2;
@@ -26,7 +39,6 @@
   --neutral-900: #01080D;
   --neutral-950: #01060B;
 
-  /* Success */
   --success-0: #FCFFFD;
   --success-100: #D2FFD7;
   --success-200: #A8FDB4;
@@ -40,7 +52,6 @@
   --success-950: #08601F;
   --success: var(--success-600);
 
-  /* Error */
   --error-0: #FFFCFC;
   --error-100: #FFD2D2;
   --error-200: #FFA8A8;
@@ -54,7 +65,6 @@
   --error-950: #800000;
   --error: var(--error-600);
 
-  /* Info */
   --info-0: #FCFEFF;
   --info-100: #D2E4FF;
   --info-200: #A8CBFF;
@@ -68,7 +78,6 @@
   --info-950: #053361;
   --info: var(--info-600);
 
-  /* Warning */
   --warning-0: #FFFFFC;
   --warning-100: #FFFBD2;
   --warning-200: #FFF3A8;
@@ -82,7 +91,6 @@
   --warning-950: #7D5C05;
   --warning: var(--warning-600);
 
-  /* Shadow */
   --shadow-0: rgba(0, 0, 0, 0.05);
   --shadow-50: rgba(0, 0, 0, 0.1);
   --shadow-100: rgba(0, 0, 0, 0.15);
@@ -96,7 +104,6 @@
   --shadow-900: rgba(0, 0, 0, 0.9);
   --shadow-950: rgba(0, 0, 0, 0.95);
 
-  /* Overlay */
   --overlay-0: rgba(255, 255, 255, 0.05);
   --overlay-50: rgba(255, 255, 255, 0.1);
   --overlay-100: rgba(255, 255, 255, 0.15);
