@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
 import type { ButtonVariant } from './Button';
 
-const variants = ['primary', 'secondary', 'outline'] satisfies ButtonVariant[];
+const variants = ['primary', 'secondary', 'outline', 'danger'] satisfies ButtonVariant[];
 
 const meta = {
   title: 'Components/Button',
@@ -52,5 +52,12 @@ export const Outline: Story = {
   args: {
     children: 'Outline',
     variant: 'outline',
+  },
+};
+
+export const Danger: Story = {
+  args: {
+    children: 'Danger',
+    variant: 'danger',
   },
 };
