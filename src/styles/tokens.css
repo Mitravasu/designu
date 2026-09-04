@@ -31,6 +31,12 @@
   --radius-sm: 2px;
   --radius-md: 4px;
 
+  /* Borders */
+  --border-width-default: 1px;
+  --border-width-strong: 2px;
+
+  --border-style-default: solid;
+
   /* Colors */
   --primary-0: #FFFDFD;
   --primary-100: #FFD9D8;
@@ -109,29 +115,49 @@
   --warning-950: #7D5C05;
   --warning: var(--warning-600);
 
-  --shadow-0: rgba(0, 0, 0, 0.05);
-  --shadow-50: rgba(0, 0, 0, 0.1);
-  --shadow-100: rgba(0, 0, 0, 0.15);
-  --shadow-200: rgba(0, 0, 0, 0.2);
-  --shadow-300: rgba(0, 0, 0, 0.3);
-  --shadow-400: rgba(0, 0, 0, 0.4);
-  --shadow-500: rgba(0, 0, 0, 0.5);
-  --shadow-600: rgba(0, 0, 0, 0.6);
-  --shadow-700: rgba(0, 0, 0, 0.7);
-  --shadow-800: rgba(0, 0, 0, 0.8);
-  --shadow-900: rgba(0, 0, 0, 0.9);
-  --shadow-950: rgba(0, 0, 0, 0.95);
+  /* Alpha primitives */
+  --black-alpha-5: rgba(0, 0, 0, 0.05);
+  --black-alpha-10: rgba(0, 0, 0, 0.1);
+  --black-alpha-20: rgba(0, 0, 0, 0.2);
+  --black-alpha-30: rgba(0, 0, 0, 0.3);
+  --black-alpha-40: rgba(0, 0, 0, 0.4);
+  --black-alpha-60: rgba(0, 0, 0, 0.6);
+  --black-alpha-80: rgba(0, 0, 0, 0.8);
 
-  --overlay-0: rgba(255, 255, 255, 0.05);
-  --overlay-50: rgba(255, 255, 255, 0.1);
-  --overlay-100: rgba(255, 255, 255, 0.15);
-  --overlay-200: rgba(255, 255, 255, 0.2);
-  --overlay-300: rgba(255, 255, 255, 0.3);
-  --overlay-400: rgba(255, 255, 255, 0.4);
-  --overlay-500: rgba(255, 255, 255, 0.5);
-  --overlay-600: rgba(255, 255, 255, 0.6);
-  --overlay-700: rgba(255, 255, 255, 0.7);
-  --overlay-800: rgba(255, 255, 255, 0.8);
-  --overlay-900: rgba(255, 255, 255, 0.9);
-  --overlay-950: rgba(255, 255, 255, 0.95);
+  --white-alpha-5: rgba(255, 255, 255, 0.05);
+  --white-alpha-10: rgba(255, 255, 255, 0.1);
+  --white-alpha-20: rgba(255, 255, 255, 0.2);
+  --white-alpha-30: rgba(255, 255, 255, 0.3);
+  --white-alpha-40: rgba(255, 255, 255, 0.4);
+  --white-alpha-60: rgba(255, 255, 255, 0.6);
+  --white-alpha-80: rgba(255, 255, 255, 0.8);
+
+  /* Semantic borders */
+  --border-subtle: var(--neutral-700);
+  --border-default: var(--neutral-500);
+  --border-strong: var(--neutral-400);
+  --border-primary: var(--primary-600);
+  --border-error: var(--error-600);
+  --border-focus: var(--info-600);
+
+  /* Semantic overlays */
+  --color-overlay-backdrop: var(--black-alpha-60);
+  --color-overlay-hover: var(--white-alpha-5);
+  --color-overlay-active: var(--white-alpha-10);
+  --color-overlay-selected: var(--white-alpha-10);
+  --color-overlay-disabled: var(--black-alpha-20);
+
+  /* Semantic shadows */
+  --color-shadow-subtle: var(--black-alpha-20);
+  --color-shadow-default: var(--black-alpha-30);
+  --color-shadow-strong: var(--black-alpha-40);
+
+  /* Semantic highlights */
+  --color-highlight-subtle: var(--white-alpha-5);
+  --color-highlight-default: var(--white-alpha-10);
+
+  /* Shadows / elevation */
+  --shadow-sm: 0 1px 3px var(--color-shadow-subtle);
+  --shadow-md: 0 4px 12px var(--color-shadow-default);
+  --shadow-lg: 0 12px 32px var(--color-shadow-strong);
 }

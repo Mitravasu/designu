@@ -62,18 +62,35 @@ const statusColorGroups = [
   })),
 }));
 
-const alphaSteps = [0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
+const alphaSteps = [5, 10, 20, 30, 40, 60, 80];
 
-const shadowColors: ColorToken[] = alphaSteps.map((step) => ({
-  name: `shadow-${step}`,
-  value: `var(--shadow-${step})`,
-  description: 'Black shadow token with increasing opacity.',
+const blackAlphaColors: ColorToken[] = alphaSteps.map((step) => ({
+  name: `black-alpha-${step}`,
+  value: `var(--black-alpha-${step})`,
+  description: `Black primitive at ${step}% opacity.`,
 }));
 
-const overlayColors: ColorToken[] = alphaSteps.map((step) => ({
-  name: `overlay-${step}`,
-  value: `var(--overlay-${step})`,
-  description: 'White overlay token with increasing opacity.',
+const whiteAlphaColors: ColorToken[] = alphaSteps.map((step) => ({
+  name: `white-alpha-${step}`,
+  value: `var(--white-alpha-${step})`,
+  description: `White primitive at ${step}% opacity.`,
+}));
+
+const semanticColors: ColorToken[] = [
+  ['overlay-backdrop', 'Backdrop dimming behind dialogs and drawers.'],
+  ['overlay-hover', 'Hover state overlay on interactive surfaces.'],
+  ['overlay-active', 'Pressed or active state overlay.'],
+  ['overlay-selected', 'Selected state overlay.'],
+  ['overlay-disabled', 'Disabled state overlay.'],
+  ['shadow-subtle', 'Subtle shadow color for low elevation.'],
+  ['shadow-default', 'Default shadow color for standard elevation.'],
+  ['shadow-strong', 'Strong shadow color for higher elevation.'],
+  ['highlight-subtle', 'Subtle highlight on dark surfaces.'],
+  ['highlight-default', 'Default highlight on dark surfaces.'],
+].map(([name, description]) => ({
+  name: `color-${name}`,
+  value: `var(--color-${name})`,
+  description,
 }));
 
 const meta = {
@@ -161,8 +178,9 @@ export const ColorPrimitives: Story = {
           key={group.title}
         />
       ))}
-      <ColorSection colors={shadowColors} title="Shadow" />
-      <ColorSection colors={overlayColors} title="Overlay" />
+      <ColorSection colors={blackAlphaColors} title="Black alpha" />
+      <ColorSection colors={whiteAlphaColors} title="White alpha" />
+      <ColorSection colors={semanticColors} title="Semantic overlay, shadow, and highlight" />
     </main>
   ),
 };
